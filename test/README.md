@@ -1,17 +1,17 @@
-Gitの基本操作
-リポジトリの初期化：
+# Gitの基本操作
+- リポジトリの初期化
 
-git init
-ファイルのステージング：
+    git init
 
-git add FILE_NAME
-コミットの作成：
+- ファイルのステージング
 
-git commit -m COMMIT_MESSAGE
-リモートリポジトリとの連携：
+    git add FILE_NAME
 
-FlutterのMyAppウィジェットの基本
+- コミットの作成
 
+    git commit -m COMMIT_MESSAGE
+# FlutterのMyAppウィジェットの基本
+```
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',#タイトルを変更
+      title: 'Flutter Demo', #タイトルを変更
       home: Text(
         'Hello, Flutter World!!', 
         style: TextStyle(fontSize:32.0), #文字のスタイル
@@ -31,3 +31,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
