@@ -1,16 +1,33 @@
-# test
+Gitの基本操作
+リポジトリの初期化：
 
-A new Flutter project.
+git init
+ファイルのステージング：
 
-## Getting Started
+git add FILE_NAME
+コミットの作成：
 
-This project is a starting point for a Flutter application.
+git commit -m COMMIT_MESSAGE
+リモートリポジトリとの連携：
 
-A few resources to get you started if this is your first Flutter project:
+FlutterのMyAppウィジェットの基本
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+import 'package:flutter/material.dart';
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',#タイトルを変更
+      home: Text(
+        'Hello, Flutter World!!', 
+        style: TextStyle(fontSize:32.0), #文字のスタイル
+      ),
+    );
+  }
+}
